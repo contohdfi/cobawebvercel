@@ -671,16 +671,13 @@ export default function App() {
                   className="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm hover:shadow-xl hover:border-emerald-300 transition-all duration-300 flex flex-col justify-between group"
                 >
                   <div>
-                    <div className="flex items-center justify-between mb-6">
-                      <div className="w-20 h-20 sm:w-22 sm:h-22 p-2 rounded-2xl bg-stone-50 border border-stone-100 flex items-center justify-center group-hover:scale-105 transition-transform">
+                    <div className="flex justify-center mb-6">
+                      <div className="w-24 h-24 sm:w-28 sm:h-28 p-3 rounded-2xl bg-stone-50 border border-stone-100 flex items-center justify-center group-hover:scale-105 transition-transform shadow-sm">
                         <img src={item.logo} alt={item.name} className="max-h-full max-w-full object-contain" />
                       </div>
-                      <span className="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-100">
-                        {item.tag}
-                      </span>
                     </div>
 
-                    <h3 className="text-lg sm:text-xl font-bold text-stone-900 mb-3 group-hover:text-emerald-800 transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-stone-900 mb-3 group-hover:text-emerald-800 transition-colors text-center">
                       {item.name}
                     </h3>
                     <p className="text-xs sm:text-sm text-stone-600 leading-relaxed text-justify">
@@ -688,11 +685,8 @@ export default function App() {
                     </p>
                   </div>
 
-                  <div className="mt-6 pt-5 border-t border-stone-100 flex items-center justify-between text-xs text-stone-500">
-                    <span className="flex items-center gap-1.5 text-emerald-700 font-semibold">
-                      <CheckCircle2 className="w-3.5 h-3.5" />
-                      Terakreditasi & Aktif
-                    </span>
+                  <div className="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-stone-400">
+                    <span className="font-medium text-emerald-800/80">{item.abbr}</span>
                     <span className="font-mono text-stone-400">0{index + 1}</span>
                   </div>
                 </div>
@@ -748,7 +742,7 @@ export default function App() {
                       </p>
                     </div>
                     <div className="mt-5 pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-stone-400">
-                      <span className="text-emerald-700 font-medium">Program Prioritas</span>
+                      <span className="text-emerald-800 font-medium">{prog.category}</span>
                       <span>0{index + 1}</span>
                     </div>
                   </div>

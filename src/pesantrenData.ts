@@ -25,7 +25,7 @@ export interface LembagaItem {
   abbr: string;
   logo: string;
   description: string;
-  tag: string;
+  tag?: string;
 }
 
 export interface ProgramItem {

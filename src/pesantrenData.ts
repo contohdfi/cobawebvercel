@@ -94,7 +94,6 @@ export const LEMBAGA_LIST: LembagaItem[] = [
     abbr: "SMP DFI",
     logo: "https://i.ibb.co.com/TDzHjMjZ/Logo-SMP.png",
     description: "Menyelenggarakan pendidikan dasar menengah yang mengintegrasikan kurikulum nasional (Kemendikbud) dengan nilai-nilai kepesantrenan untuk membentuk karakter santri yang mandiri, disiplin, dan berprestasi.",
-    tag: "Formal Kemendikbud"
   },
   {
     id: "slta",
